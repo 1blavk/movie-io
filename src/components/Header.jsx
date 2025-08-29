@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 
 // THIRD PARTY
-import { Bookmark, Search, Undo2 } from "lucide-react";
+import { Bookmark, ListFilter, Search, Undo2 } from "lucide-react";
 import { useLocation, NavLink, useNavigate } from "react-router-dom";
 
 // COMPONENTS
@@ -57,6 +57,8 @@ function Header() {
                     <Search color="#999999" strokeWidth={2.25} size={16} />
                 </button>
             </form>
+
+
 
             <NavLink to={"/bookmark"} className={({ isActive }) => isActive ? "bg-overlay-overlay cursor-default flex gap-2 font-[500] items-center content-center p-4 bg-overlay-dark rounded-full" : "flex gap-2 font-[500] items-center content-center p-4  bg-overlay-dark rounded-full cursor-pointer active:scale-[0.96] hover:bg-overlay-overlay hover:transition-colors"}>
                 <Bookmark color="#ccc" strokeWidth={2.25} size={16} />
